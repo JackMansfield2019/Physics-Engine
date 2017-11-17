@@ -83,7 +83,7 @@ object :: object(String n, double m, double v, double s, double mm, double d, do
 
 int main()
 {
-double map = [100][100];
+double map = [100][100][100];
 while(true){
 
 
