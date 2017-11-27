@@ -7,6 +7,7 @@ class point{
     double x;
     double y;
     double z;
+    point(double x1, double y1, double z1);
     void setx(double x);
     void sety(double y);
     void setz(double z);
@@ -14,9 +15,10 @@ class point{
     double gety( void );
     double getz( void );
 };
-point :: point(double x1, double y1){
+point :: point(double x1, double y1, double z1){
 x = x1;
 y =y1;
+z =z1;
 }
 double point :: getx(){
     return x;
@@ -33,10 +35,14 @@ void point :: setx(double x1){
 void point :: sety(double y1){
     y =y1;
 }
+void point :: setz( double z1){
+    z = z1;
+}
+
 
 class object{
     public:
-    String name;
+    string name;
     double mass;
     double velocity;
     double vi;
@@ -46,10 +52,11 @@ class object{
     double density;
     double volume;
     double force;
+    object(string n, double m, double v, double s, double mm, double d, double vol, double x, double y, double f);
     void setmass( double m);
     void setvelocity ( double velocity);
-    void setmomentum (double m;
-    void setname (String n);
+    void setmomentum (double m);
+    void setname (string n);
     void setdensity (double d);
     void setvolume (double v);
     void setforce (double f);
@@ -72,21 +79,24 @@ class object{
     
 
 };
-object :: object(String n, double m, double v, double s, double mm, double d, double v, double x, double y, double f){
+object :: object(string n, double m, double v, double s, double mm, double d, double vol, double x, double y, double z,double f){
     name = n;
     mass = m;
     density = d;
-    volume = v
-    point pos(x,y);
-
+    velocity = v;
+    momentum = mm;
+    force = f;
+    speed = s;
+    volume = vol;
+    point pos(x,y,z);
 }
 
 int main()
 {
-double map = [100][100][100];
+double map [100][100][100];
 while(true){
 
-
+//dank memes
 
 }
    cout << "Hello World" << endl;
