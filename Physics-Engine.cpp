@@ -2,40 +2,51 @@
 
 using namespace std;
 
-class point{
+class vector{
     public:
     double x;
     double y;
     double z;
-    point(double x1, double y1, double z1);
+    vector(double x1, double y1, double z1);
     void setx(double x);
     void sety(double y);
     void setz(double z);
     double getx( void );
     double gety( void );
     double getz( void );
+    double setmagnitude( double x );
+    void getmagnitude( void );
+    void setlength(double x);
+    /*double getlength( void );
+    double multiplcation( vector x);
+    double division (vector x);
+    double addition (vector x);
+    double subtraction (vector x);
+    double dotproduct( vector x);
+    double crossproduct(vector x);
+    double rotation(vector x);*/
 };
-point :: point(double x1, double y1, double z1){
+vector :: vector(double x1, double y1, double z1){
 x = x1;
 y =y1;
 z =z1;
 }
-double point :: getx(){
+double vector :: getx(){
     return x;
 }
-double point :: gety(){
+double vector :: gety(){
     return y;
 }
-double point :: getz(){
+double vector :: getz(){
     return z;
 }
-void point :: setx(double x1){
+void vector :: setx(double x1){
     x = x1;
 }
-void point :: sety(double y1){
+void vector :: sety(double y1){
     y =y1;
 }
-void point :: setz( double z1){
+void vector :: setz( double z1){
     z = z1;
 }
 
@@ -52,7 +63,7 @@ class object{
     double density;
     double volume;
     double force;
-    object(string n, double m, double v, double s, double mm, double d, double vol, double x, double y, double f);
+    object(string n, double m, double v, double s, double mm, double d, double vol, double x, double y,double z, double f);
     void setmass( double m);
     void setvelocity ( double velocity);
     void setmomentum (double m);
@@ -88,7 +99,7 @@ object :: object(string n, double m, double v, double s, double mm, double d, do
     force = f;
     speed = s;
     volume = vol;
-    point pos(x,y,z);
+    vector pos(x,y,z);
 }
 
 int main()
@@ -96,7 +107,7 @@ int main()
 double map [100][100][100];
 while(true){
 
-//dank memes
+
 
 }
    cout << "Hello World" << endl;
