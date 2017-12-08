@@ -37,4 +37,16 @@ class object{
     double calcvelocity();
     double calcmass();
 };
+
+object :: object(std::string n, double m, double v, double s, double mm, double d, double vol, double x, double y,double z, double f){
+    name = n;
+    mass = m;
+    density = d;
+    velocity = v;
+    momentum = mm;
+    force = f;
+    speed = s;
+    volume = vol;
+    vector pos(x,y,z);
+}
 #endif

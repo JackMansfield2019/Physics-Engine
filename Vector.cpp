@@ -12,9 +12,10 @@ public:
     double getx( void );
     double gety( void );
     double getz( void );
-    double setmagnitude( double x );
-    void getmagnitude( void );
-    void setlength(double x);
+    double setmagnitude( double x , double y, double z);
+    double getmagnitude( void );
+    vector addition (vector x);
+    vector subtraction (vector x);
     /*double getlength( void );
     double multiplcation( vector x);
     double division (vector x);
