@@ -2,7 +2,7 @@
 #define OBJECT
 
 class object{
-    public:
+private:
     std::string name;
     double mass;
     double velocity;
@@ -13,29 +13,30 @@ class object{
     double density;
     double volume;
     double force;
+public:
     object(std::string n, double m, double v, double s, double mm, double d, double vol, double x, double y,double z, double f);
-    void setmass( double m);
-    void setvelocity ( double velocity);
-    void setmomentum (double m);
-    void setname (std::string n);
-    void setdensity (double d);
-    void setvolume (double v);
-    void setforce (double f);
-    void setvi( double vi);
-    void setvf(double vf);
-    double getmass ( void );
-    double getvelocity ( void );
-    double getspeed ( void );
-    double getdensity ( void );
-    double getvolume ( void );
-    double getforce ( void );
-    double getmomentum ( void );
-    double getvf( void );
-    double getvi(void);
-    double calcmomentum();
-    double calcforce();
-    double calcvelocity();
-    double calcmass();
+    void setMass( double m);
+    void setVelocity ( double velocity);
+    void setMomentum (double m);
+    void setName (std::string n);
+    void setDensity (double d);
+    void setVolume (double v);
+    void setForce (double f);
+    void setVF( double vi);
+    void setVF(double vf);
+    double getMass ( void );
+    double getVelocity ( void );
+    double getSpeed ( void );
+    double getDensity ( void );
+    double getVolume ( void );
+    double getForce ( void );
+    double getMomentum ( void );
+    double getVF( void );
+    double getVI(void);
+    double calcMomentum();
+    double calcForce();
+    double calcVelocity();
+    double calcMass();
 };
 
 object :: object(std::string n, double m, double v, double s, double mm, double d, double vol, double x, double y,double z, double f){
