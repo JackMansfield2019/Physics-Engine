@@ -22,7 +22,7 @@ public:
     void setDensity (double d);
     void setVolume (double v);
     void setForce (double f);
-    void setVF( double vi);
+    void setVI( double vi);
     void setVF(double vf);
     double getMass ( void );
     double getVelocity ( void );
@@ -39,7 +39,7 @@ public:
     double calcMass();
 };
 
-object :: object(std::string n, double m, double v, double s, double mm, double d, double vol, double x, double y,double z, double f){
+/*object :: object(std::string n, double m, double v, double s, double mm, double d, double vol, double x, double y,double z, double f){
     name = n;
     mass = m;
     density = d;
@@ -49,5 +49,5 @@ object :: object(std::string n, double m, double v, double s, double mm, double 
     speed = s;
     volume = vol;
     vector pos(x,y,z);
-}
+}*/
 #endif
