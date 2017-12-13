@@ -15,12 +15,13 @@ public:
     double getZ( void );
     double setMagnitude( double x , double y, double z);
     double getMagnitude( void );
+    double calcMagnitude(void);
     vector addition (vector x);
     vector subtraction (vector x);
-    vector scaling ( void );
+    vector scaling ( double s);
     //vector multi (vector x);
     double dotProduct(vector x);
-    double calcAngle(vextor x);
+    double calcAngle(vector x);
     /*double getlength( void );
     double multiplcation( vector x);
     double division (vector x);

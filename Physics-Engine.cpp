@@ -29,28 +29,28 @@ void vector :: setZ( double z1){
     z = z1;
 }
 vector vector :: addition(vector x1){
-    vector ans(this.getX() + x1.getX(),this.getY() + x1.getY(),this.getZ() + x1.getZ());
+    vector ans((this->getX() + x1.getX()),(this->getY() + x1.getY()),(this->getZ() + x1.getZ()));
     return ans;
 }
 vector vector :: subtraction(vector x1){
-    vector ans(this.getX() - x1.getX(),this.getY() - x1.getY(),this.getZ() - x1.getZ()));
+    vector ans((this->getX() - x1.getX()),(this->getY() - x1.getY()),(this->getZ() - x1.getZ()));
     return ans;
 }
 vector vector :: scaling( double s ){
-    vector ans(this.getX() * s)(this.getY() * s)(this.getZ * S);
+    vector ans((this->getX() * s),(this->getY() * s),(this->getZ()* s));
     return ans;
     }
 /*vector vector :: multi(){
     vector ans(this.getX() * s)(this.getY() * s)(this.getZ * S);
 }*/
 double vector :: dotProduct(vector x){
-    return(this.getX() * x1.getX()) + (this.getY() * x1.getY()) + (this.getZ() * x1.getZ()));
+    return((this->getX() * x.getX()) + (this->getY() * x.getY()) + (this->getZ() * x.getZ()));
 }
 double vector :: calcMagnitude(void){
-        return Math.abs(Math.sqrt( Math.pow(this.getX(),2) + Math.pow(this.getY(),2) + Math.pow(this.getZ(),2)));
+        return abs(sqrt( pow(this->getX(),2) + pow(this->getY(),2) + pow(this->getZ(),2)));
 }
 double vector :: calcAngle(vector x){
-    return Math.acos(this.dotProduct(vector x) / (Math.sqrt(this.calcMagnitude()) * Math.sqrt(x.calcMagnitude())));
+    return acos(this->dotProduct(x) / (sqrt(this->calcMagnitude()) * sqrt(x.calcMagnitude())));
 }
 
 
