@@ -53,6 +53,12 @@ double vector :: calcAngle(vector x){
     return acos(this->dotProduct(x) / (sqrt(this->calcMagnitude()) * sqrt(x.calcMagnitude())));
 }
 
+vector vector :: crossProduct(vector v){
+    vector ans((this->getY() * v.getZ()) - (this->getZ() * v.getY()),((this->getZ() * v.getX()) - (this->getX() * v.getZ())),
+    ((this->getX() * v.getY()) - (this->getY() * v.getX())));
+    return ans;
+}
+
 
 object :: object(std::string n, double m, double v, double s, double mm, double d, double vol, double x, double y,double z, double f){
     name = n;
