@@ -1,6 +1,6 @@
 #ifndef OBJECT
 #define OBJECT
-
+yeet
 class object{
 private:
     std::string name;
@@ -39,6 +39,12 @@ public:
     double calcMass();
 };
 
+/*
+i need to calculate the forces acticng on each dimention of a object
+    sol. make oject extend vector class.
+        and then make calc force use the vector methods to add the differnt forces into one net vector.
+    mix vector and object class
+*/
 /*object :: object(std::string n, double m, double v, double s, double mm, double d, double vol, double x, double y,double z, double f){
     name = n;
     mass = m;

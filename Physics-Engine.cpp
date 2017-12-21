@@ -77,6 +77,20 @@ int main()
 {
     
 double map [100][100][100];
-   std::cout << "this will producduce and error"<<std::endl;
+double x = 0;
+double y = 0;
+double z = 0;
+std::cin>> x;
+std::cin>> y;
+std::cin>> z;
+    vector pos(x,y,z);
+    std::cout<<"next"<<std::endl;
+std::cin>> x;
+std::cin>> y;
+std::cin>> z;
+    vector pos2(x,y,z);
+    
+    vector& cp = pos.crossProduct(pos2);
+   std::cout << "x: " << cp.getX()<<" y: " << cp.getY() << " Z: " << cp.getZ() << std::endl;
    return 0;
 }
