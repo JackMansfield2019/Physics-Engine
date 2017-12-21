@@ -22,6 +22,7 @@ public:
     //vector multi (vector x);
     double dotProduct(vector x);
     double calcAngle(vector x);
+    vector crossProduct(vector x);
     /*double getlength( void );
     double multiplcation( vector x);
     double division (vector x);
